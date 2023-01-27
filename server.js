@@ -8,8 +8,14 @@ const bot = new Telegraf(TOKEN);
 const Url = 'http://api.weatherstack.com/current?access_key=757afed653beeeb55db41a6620b2420a&query="';
 
 const fetchData = async (cityName) => {
+  try {
     const res = await axios.get(`${Url + cityName}`);
     return res;
+  } catch (error) {
+    console.log(error.message);
+  }
+    
+    
   };
   
   // fetchData("New York");
