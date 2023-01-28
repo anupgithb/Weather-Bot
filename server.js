@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Telegraf } from "telegraf";
 
-const TOKEN = '5832305990:AAGf80gggu1ahPggtGPQr03v3-X-xcJrecs';
+const TOKEN = '5856614621:AAFnQMGl9dKtEvEaFE2EF_MFdGhAYVKnFqI';
 
 const bot = new Telegraf(TOKEN);
 const Url = 'http://api.weatherstack.com/current?access_key=757afed653beeeb55db41a6620b2420a&query="';
